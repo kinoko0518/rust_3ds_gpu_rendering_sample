@@ -1,0 +1,20 @@
+.fvec mvp[4]
+
+.in v0
+.in v1
+
+.out outpos position
+.out outtex texcoord0
+
+.proc main
+    ; MVP行列の各行と頂点ベクトルの内積を計算する
+    dp4 outpos.x, mvp[0], v0
+    dp4 outpos.y, mvp[1], v0
+    dp4 outpos.z, mvp[2], v0
+    dp4 outpos.w, mvp[3], v0
+
+    ; UV座標のパススルー
+    mov outtex, v1
+
+    end
+.end

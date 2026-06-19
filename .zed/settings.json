@@ -1,0 +1,16 @@
+{
+    "lsp": {
+        "rust-analyzer": {
+            "initialization_options": {
+                "check": {
+                    "overrideCommand": [
+                        "cargo",
+                        "3ds",
+                        "check",
+                        "--message-format=json"
+                    ]
+                }
+            }
+        }
+    }
+}

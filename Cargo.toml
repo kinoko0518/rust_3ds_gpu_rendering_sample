@@ -1,0 +1,17 @@
+[package]
+name = "gpu_rendering"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ctru-rs = { git = "https://github.com/rust3ds/ctru-rs" }
+citro3d.git = "https://github.com/rust3ds/citro3d-rs"
+citro3d-sys.git = "https://github.com/rust3ds/citro3d-rs"
+
+[build-dependencies]
+image = "0.25.10"
+swizzle_3ds = "0.2.0"
+const_format = "0.2.36"
+
+[package.metadata.cargo-3ds]
+romfs_dir = "romfs"
