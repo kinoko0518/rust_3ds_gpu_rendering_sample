@@ -151,8 +151,6 @@ fn render_frame(
 fn main() {
     let apt = Apt::new().unwrap();
     let mut hid = Hid::new().unwrap();
-
-    // GFX -> Instance -> シェーダの構築の順番が要求される
     let gfx: &'static Gfx = Box::leak(Box::new(Gfx::new().unwrap()));
     let mut citro: Instance = citro3d::Instance::new().unwrap();
 
